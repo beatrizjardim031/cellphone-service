@@ -14,7 +14,7 @@ public class CellPhone {
         this.phoneNumber = "";
         this.owner = "";
     }
-
+// getters and setters
     public long getSerialNumber() {
         return serialNumber;
     }
