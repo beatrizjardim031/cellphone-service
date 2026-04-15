@@ -56,8 +56,8 @@ public class CellPhone {
     }
 
     // methods
-    public static String dial(String owner, String phoneNumber) {
-        return owner + " is calling " + phoneNumber;
+    public void dial(String phoneNumber) {
+        System.out.printf("%s is calling %s%n", owner, phoneNumber);
     }
 
 
