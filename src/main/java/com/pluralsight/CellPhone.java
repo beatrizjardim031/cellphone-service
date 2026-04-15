@@ -1,12 +1,15 @@
 package com.pluralsight;
 
 public class CellPhone {
+// fields
     private long serialNumber;
     private String model;
     private String carrier;
     private String phoneNumber;
     private String owner;
 
+
+//  constructors
     public CellPhone(){
         this.serialNumber = 0;
         this.model = "";
@@ -39,6 +42,7 @@ public class CellPhone {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
@@ -50,4 +54,11 @@ public class CellPhone {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+
+    // methods
+    public static String dial(String owner, String phoneNumber) {
+        return owner + " is calling " + phoneNumber;
+    }
+
+
 }
